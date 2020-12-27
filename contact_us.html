@@ -55,9 +55,50 @@
                 within a matter of hours to help you.</p>
 
             <form action="mail.php" method="post">
-                <input type="text" name="name" id="name">
-                <input type="email" name="email" id="email">
-                <input type="submit" value="Submit">
+
+                <div class="inputwrapper">
+                    <label for="name" class="newline">First Name</label>
+                    <input type="text" name="name" id="name" placeholder="First Name">
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="inputwrapper">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message."></textarea>
+                </div>
+
+                <div class="inputwrapper">
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sing-me-up" checked>
+                    <label for="email-sub">Subscribe for Email Newsletter</label>
+                </div>
+
+                <div class="inputwrapper">
+                    <p>How would you like to be contacted?</p>
+                    <input type="radio" name="contact-pref" id="phone"
+                    value="phone">
+                    <label for="phone" class="margin-right-a">Phone</label>
+                    <input type="radio" name="contact-pref" id="email2"
+                    value="email">
+                    <label for="email2">Email</label>
+                </div>
+
+                <div class="inputwrapper">
+                    <select name="county" id="county">
+                        <option value="Not-Chosen">Choose County</option>
+                        <option value="Limerick">Limerick</option>
+                        <option value="Dublin">Dublin</option>
+                        <option value="Galway">Galway</option>
+                        
+
+                    </select>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Submit" class="mybutton">
+                </div>
 
             </form>
         </div>
